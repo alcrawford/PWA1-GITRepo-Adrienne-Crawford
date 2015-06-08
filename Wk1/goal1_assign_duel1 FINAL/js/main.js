@@ -62,9 +62,9 @@ Week 1
         if (playerOneHealth<1 && playerTwoHealth<1) /*both players fall below 1 and no winner*/
         {
             result = "You Both Die";
-        } else if(playerOneHealth<1){				/*one player
+        } else if(playerOneHealth<1){				/*one player falls below, 2 wins*/
             result =playerTwoName+" WINS!!!"
-        } else if (playerTwoHealth<1)
+        } else if (playerTwoHealth<1)				/*two player falls below, 1 wins*/
         {
             result = playerOneName+" WINS!!!"
         };
@@ -72,6 +72,6 @@ Week 1
     };
 
     /*******  The program gets started below *******/
-    fight();
+    fight();											/*program restart*/ 
 
 })();
