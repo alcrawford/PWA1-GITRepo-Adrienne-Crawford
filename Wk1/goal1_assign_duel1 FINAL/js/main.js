@@ -1,9 +1,8 @@
-/**
- * Duel Fight Game - FINISHED
- * Date: 4/09/13
-
- Assignment 1
- Part 1/3 of series
+/*
+Adrienne Crawford
+PWA1 
+June 2015
+Week 1
 */
 
 // self-executing function
@@ -12,35 +11,35 @@
     console.log("FIGHT!!!");
 
     //player name
-    var playerOneName = "Spiderman";
+    var playerOneName = "Spiderman";	/* present names of the players */
     var playerTwoName = "Batman";
 
     //player damage
-    var player1Damage = 20;
+    var player1Damage = 20;				/* create decrement numbers to use on health */
     var player2Damage = 20;
 
     //player health
-    var playerOneHealth = 100;
+    var playerOneHealth = 100;			/* create starting health numbers */
     var playerTwoHealth = 100;
 
     //initiate round
-    var round=0;
+    var round=0;						/* create rounds */
 
     function fight(){
-        alert(playerOneName+":"+playerOneHealth+"  *START*  "+playerTwoName+":"+playerTwoHealth);
-        for (var i = 0; i < 10; i++)
+        alert(playerOneName+":"+playerOneHealth+"  *START*  "+playerTwoName+":"+playerTwoHealth);     /*prompt the stats and names of players to start*/
+        for (var i = 0; i < 10; i++)																/*use 
         {
             //random formula is - Math.floor(Math.random() * (max - min) + min);
-            var minDamage1 = player1Damage * .5;
+            var minDamage1 = player1Damage * .5;                                    /* minimum damage can be half of 20, max is 20 each round*/
             var minDamage2 = player2Damage * .5;
-            var f1 = Math.floor(Math.random()*(player1Damage-minDamage1)+minDamage1);
-            var f2 = Math.floor(Math.random()*(player2Damage-minDamage2)+minDamage2);
+            var f1 = Math.floor(Math.random()*(player1Damage-minDamage1)+minDamage1);  /* generate the random damage numbers between 10 and 20 for each player*/
+            var f2 = Math.floor(Math.random()*(player2Damage-minDamage2)+minDamage2);  /*use formula with math.down to round down and math.random
 
             //inflict damage
-            playerOneHealth-=f1;
+            playerOneHealth-=f1;                /*generate new health numbers for players*/
             playerTwoHealth-=f2;
 
-            console.log(playerOneName+": "+playerOneHealth + " " + playerTwoName+":"+playerTwoHealth);
+            console.log(playerOneName+": "+playerOneHealth + " " + playerTwoName+":"+playerTwoHealth); /*present new health numbers for players*/
 
             //check for victor
             var result = winnerCheck();
