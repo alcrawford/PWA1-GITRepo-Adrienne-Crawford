@@ -27,7 +27,7 @@ Week 1
 
     function fight(){
         alert(playerOneName+":"+playerOneHealth+"  *START*  "+playerTwoName+":"+playerTwoHealth);     /*prompt the stats and names of players to start*/
-        for (var i = 0; i < 10; i++)																/*use 
+        for (var i = 0; i < 10; i++)															
         {
             //random formula is - Math.floor(Math.random() * (max - min) + min);
             var minDamage1 = player1Damage * .5;                                    /* minimum damage can be half of 20, max is 20 each round*/
