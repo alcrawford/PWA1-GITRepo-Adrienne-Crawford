@@ -33,10 +33,10 @@ Week 1
             var minDamage1 = player1Damage * .5;                                    /* minimum damage can be half of 20, max is 20 each round*/
             var minDamage2 = player2Damage * .5;
             var f1 = Math.floor(Math.random()*(player1Damage-minDamage1)+minDamage1);  /* generate the random damage numbers between 10 and 20 for each player*/
-            var f2 = Math.floor(Math.random()*(player2Damage-minDamage2)+minDamage2);  /*use formula with math.down to round down and math.random
+            var f2 = Math.floor(Math.random()*(player2Damage-minDamage2)+minDamage2);  /*use formula with math.down to round down and math.random to generate number*/
 
             //inflict damage
-            playerOneHealth-=f1;                /*generate new health numbers for players*/
+            playerOneHealth-=f1;                /*generate new health numbers for players using variables from prior formula*/
             playerTwoHealth-=f2;
 
             console.log(playerOneName+": "+playerOneHealth + " " + playerTwoName+":"+playerTwoHealth); /*present new health numbers for players*/
@@ -44,8 +44,8 @@ Week 1
             //check for victor
             var result = winnerCheck();
             console.log(result);
-            if (result==="no winner")
-            {
+            if (result==="no winner") /*if else statement that will work with if else below to determine */
+            {						  /* outcome. no match results in jump to program start or repeat at bottom */
                 round++;
                 alert(playerOneName+":"+playerOneHealth+"  *ROUND "+round+" OVER"+"*  "+playerTwoName+":"+playerTwoHealth);
 
@@ -59,10 +59,10 @@ Week 1
 
     function winnerCheck(){
         var result="no winner";
-        if (playerOneHealth<1 && playerTwoHealth<1)
+        if (playerOneHealth<1 && playerTwoHealth<1) /*both players fall below 1 and no winner*/
         {
             result = "You Both Die";
-        } else if(playerOneHealth<1){
+        } else if(playerOneHealth<1){				/*one player
             result =playerTwoName+" WINS!!!"
         } else if (playerTwoHealth<1)
         {
