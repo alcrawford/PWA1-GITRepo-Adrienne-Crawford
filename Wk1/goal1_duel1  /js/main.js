@@ -1,8 +1,7 @@
 /*
 Adrienne Crawford
 PWA1 
-June 2015
-Week 1
+July 14 2015
 */
 
 // self-executing function
