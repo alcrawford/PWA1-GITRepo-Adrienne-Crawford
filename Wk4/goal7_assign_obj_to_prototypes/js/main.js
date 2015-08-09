@@ -4,19 +4,25 @@
  * Goal: Goal7
  */
 
-//In sum, there would be three Constructors, along with 3 instances of Instantiation to go with them 
-and prototypes to detail them.
 
-//Name r1c1 would be constructor 1- the plans
-//Job r1c2 would be prototype to match above- add details
-//Action r1c3 would be instantiation to create object based off above parameters
+//constructor
+//array (5 names min) @ random in output display
+//For Loop
+array(object1, object2,object3
+//instance one person object 
+//instance two person object
+//instance three person object
 
-//Name r2c1 would be constructor 1- the plans
-//Job r2c2 would be prototype to match above- add details
-//Action r2c3 would be instantiation to create object based off above parameters
+//instantiating
+//ex var person = new Person(names[someName], someRow); 
+//a randomly choosed name from the names array is sent using the Math.random() method and HTML row number
+//function "populateHTML' that outputs persons name and job but will not allow duplicate names to appear (this.)
+//function "setInterval(runUpdate, 1000 /30);"
 
-//Name r3c1 would be constructor 1- the plans
-//Job r3c2 would be prototype to match above- add details
-//Action r3c3 would be instantiation to create object based off above parameters/**
-
+//prototype
+//call set interval in runupdate function
+//ex function runUpdate(){
+//people.forEach(function(element){
+//element.update();
+//});
 
